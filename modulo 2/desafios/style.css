@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    background-color: #506DAB;
+    height: 130px;
+}
+header > p { 
+    margin: 10px 5px 5px 5px ;
+
+    font-size: 1.1em;
+    color: white;
+}
+header > h1 {
+text-indent: 10px;
+padding: 2px;
+font-size: 2.1em;
+color: white;
+}
+nav { 
+    margin-top: 13px;
+
+}
+nav > a {
+    text-decoration: none;
+    color: white;
+    margin-right: 5px;
+    padding: 3px 5px;
+    
+}
+nav >a:hover {
+    background-color: rgb(69, 69, 196);
+    color: rgb(160, 168, 241);
+    border-radius: 10px;
+}
+
+aside {
+    width:430px;
+    margin-left: 137vh;
+    border: 1px solid black;
+    height: 120vh;
+    padding: 5px;
+    word-break:break-word;
+    display: inline-block;
+    
+
+}
+aside > p > a { 
+    background-color: #506DAB;
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+}
+aside > p {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    
+}
+.lexsacareca {
+    display: block;
+    margin: auto;
+    margin-bottom: 35px;
+    border: 5px solid #506DAB;
+    border-radius: 50%;
+}

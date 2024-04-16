@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'vito';
+    src: url(../fonte/Ohyou.otf) format('opentype'), url(../fonte/Ohyou.ttf) format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+       
+body {
+    background-color: #BB75FA;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    width: 400px;
+    border-radius: 15px;
+    text-align:center;
+    box-shadow: 5px 5px 6px #8855b6;
+  
+
+}
+h2 {
+    color: #8F75FA;
+    text-shadow: 1px 1px 3px #BB75FA;
+    font-size: 1.7em;  
+  
+}
+p {
+    text-align: center;
+    font-weight: bold;
+    /*
+    font- weight
+
+    lighter, light, bold, bolder*/
+
+    /* nem todas as fontes possuem todas os pesos*/
+    /*
+    font-style
+
+    estilo da fonte em CSS, aonde se põe em itálico por exemplo, sem usar o HTML*/
+    color: #583874;
+    font:bold 1.1em 'Poppins', sans-serif;
+    /*shorthand font
+
+    font style -> font weight -> font size -> font-family.
+
+    no lugar de todos os comandos separadamente, utilizar todos os comandos em um shorthand também é válido.
+    */
+    
+}
+.botao {
+    background-color: #BB75FA;
+    color: white;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    box-shadow: 2px 2px 4px #8955b6 ;
+    
+    
+}
+.container {
+    background-color: #8855b6;
+    color: white;
+    width: 500px;
+    text-align: center;
+
+}
+.inputs {
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 15px;
+    text-align:center;
+    box-shadow: 5px 5px 6px #8855b6;
+    margin-top: 30px;
+    width: 400px;
+    text-align: center;
+}
+.lexsaimg {
+    border-radius: 15px;
+    margin-bottom: 3px;
+}
+.h2fonte {
+    font-family: 'vito', sans-serif;
+    font-size: 2.2em;
+}
+.lorem {
+    font-family: 'vito';
+    font-style: normal;
+    font-weight: lighter;
+    
+}
+.alexsadiv {
+    background-color: white;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: 4px solid #8F75FA;
+    box-shadow: 2px 2px 20px black;
+}
+.alexsadiv > p {
+    display: none;
+}
+.alexsadiv:hover > p {
+    display:block;
+}
+
+
+/*
+Medidas Absolutas:
+cm, mm, in(polegada), px, pt(ponto), pc(paica)
+
+1 in = 2,57cm
+cm e in não são usados pois existem diferentes tamanhos de tela
+px é o tamanho dado em pixels
+pt é o tamanho dado em pontos (tamanho tipográfico, ou seja, de uma folha)
+pc é o tamanho dado em paica (tamanho tipográfico, ou seja, de uma folha)
+
+Medidas Relativas:
+em, ex, rem, vw, vh, %
+
+em é o tamanho dado em relação ao tamanho do "M" maiúsculo(16 pixels)
+ex é o tamanho dado em relação ao tamanho do "x" minúsculo
+rem é o tamanho dado em relação ao tamanho da fonte imposta no body do html
+vw é o tamanho dado em relação à largura da tela 
+vh é o tamanho dado em relação à altura da tela 
+% é o tamanho dado em porcentagem
+
+(px e em são os tamanhos recomendados pela W3C)
+
+whatfontis.com
+fontsquirrel.com
+
+text-indent: valor, (paragrafo)
+
+
+outline, padding, margin, border
+
+box-level: sempre começa em uma linha nova, quebrando a linha e criando uma box, e quebra outra linha para a continuação do conteúdo após a box (div, os h's, p, main, header, nav, form, video)
+
+in-line level: não começa em uma linha nova e continua na linha em que o conteúdo estava e não quebra uma linha para a continuação do conteúdo, exemplo em imagem no whatsapp (span, a, code, small, strong, em, sup e sub, label, entre outros)
+*/
+
+
+
+

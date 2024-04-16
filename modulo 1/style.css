@@ -1,0 +1,57 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+ }
+ 
+ .titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    color:blueviolet;
+}
+.aulaguanabara {
+    font-family: Arial;
+    font-size: 15pt;
+    color:black;
+    
+}
+.lexsa {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    color: rgb(108, 2, 196);
+}
+.forme {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    color: blueviolet;
+
+}
+.tela {
+    background-color: rgb(45, 0, 97);
+}
+.thyago {
+    font-family:Arial;
+    font-size: 15pt;
+}
+.video1 {
+    text-align: center;
+    font-size: 30pt;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link   {
+    text-align: center;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    size: 15pt;
+    
+}
+.bg1 {
+    background-color: rgb(44, 44, 44);
+}

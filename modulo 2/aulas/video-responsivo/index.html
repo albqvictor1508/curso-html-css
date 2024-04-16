@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Responsivo</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    :root {
+        --cor: #4C4C02;
+    }
+    body {
+        background-image: linear-gradient(100deg,black,rgb(99, 99, 2));
+        height: 100%;
+    }
+    header {
+        background-color: black;
+        padding: 20px;
+        color: white;
+        text-align: center;
+    }
+    main {
+        background-color: rgb(255, 255, 255);
+        max-width: 700px;
+        max-height: 940px;
+        
+        margin: auto;
+        font-weight: lighter;
+        border-radius: 0px 0px 10px 10px;
+    }
+    main p {
+        margin: 10px;
+    }
+    ul {
+        list-style-position: inside;
+        list-style-type: '\2714\00A0';
+    }
+    aside {
+        background-color: #4C4C02;
+        margin: 15px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    aside > h3 {
+        background-color: #7e7e03;
+        margin: -10px -10px 10px -10px;
+        padding: 7px;
+        border-radius: 15px 15px 0px 0px 
+    }
+    main > h2 {
+        text-align: center;
+        margin-bottom: 15px;
+        padding: 3px;
+    }
+    div {
+        background-color: var(--cor);
+        margin: -3.5px;
+        padding: 20px;
+        padding-bottom: 54%;
+        /*54% foi o exato para sumir as barras pretas*/
+        position: relative;
+    }
+    div > iframe {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+    }
+    .p-aside {
+        margin-top: 50px;
+    }
+</style>
+<body>
+    <header>
+        <h1>Tornando video responsivo</h1>
+    </header>
+    <main>
+            <h2>Aqui mostrarei a montagem de um pc gamer de ultima geração.<h2>
+
+            <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MiGKGCzD7-U?si=iDB8nhzXLqAv8VZb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+       
+            <p>Este vídeo está responsivo para todo tipo de tela.</p>
+
+        
+        <aside>
+            <h3>Isto foi possivel graças aos comandos:</h3>
+            <ul>
+                <li>position:relative</li>
+                <li>position:absolute</li>
+                <li>padding-bottom</li>
+                <li>width</li>
+                <li>height</li>
+            </ul>
+
+            <p class="p-aside">o position relative e o position absolute são utilizados para centralizar o video e torna-lo responsivo</p>
+            <p> as medidas serão postas em "%" para que o não haja perca de qualidade no video</p>
+
+        </aside>
+        
+    </main>
+    
+</body>
+</html>

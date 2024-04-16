@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        :root {
+            --cor0: #BB4D04;
+            --cor1: #3200E6;
+            --cor2: #453091;
+            --cor3: #2C283C;
+        }
+        body {
+            
+           
+            
+        }
+        header {
+            background-color:var(--cor1);
+            padding: 20px;
+            
+        }
+        header > h1 {
+            
+            color: white;
+            text-align: center;
+
+        }
+        main {
+            margin-top: 20px;
+        padding: 8px;
+        border-radius: 15px;  
+              
+        }
+        main > p {
+            
+            padding-bottom: 15px;
+            word-break: break-all;
+            
+        }
+        .after {
+            background-color: #3200e691;
+            width: 250px;
+            height: 25px;
+        }
+        .after::after {
+            content: '\1F3AE\00A0';
+        }
+      
+
+    </style>
+    <title>Variáveis em CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Variáveis em CSS</h1>
+    </header>
+    
+    <main>
+        
+        <p>:root, permite criar variáveis em CSS, muito prático para facilitar na escolha das cores</p>
+
+        <p>funciona da seguinte maneira:</p>
+
+        <p>  :root {
+            --cor0: #BB4D04;
+            --cor1: #3200E6;
+            --cor2: #453091;
+            --cor3: #2C283C;
+        }
+    </p>
+    <p>de '--cor0' até '--cor3' são variáveis que armazenam algo dentro delas</p>
+    
+    <p> você pode acessar essas variáveis pelo 'var()' por exemplo</p>
+
+    <p>não se aplica somente a cores, podendo ser aplicada a qualquer informação que se armazenar.</p>
+
+    <p>  :root {
+        --cor0: #BB4D04;
+        --cor1: #3200E6;
+        --cor2: #453091;
+        --cor3: #2C283C;
+        --fonte: 'Poppins', sans-seriff;
+    }
+</p>
+
+<p>é um exemplo de root que guardar também uma fonte</p>
+<p class="after">pseudo-elemento "after"</p>
+    </main>
+    
+</body>
+</html>
