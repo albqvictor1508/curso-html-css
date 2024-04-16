@@ -25,6 +25,7 @@ span {
 }
 p {
     margin: 10px 10px 15px;
+    text-align: justify;
 
 }
 img {
@@ -39,10 +40,13 @@ img {
     margin-top: 10px;
     width: 130px;
 }
-.push {
+.centro {
     text-align: center;
     font-weight: bold;
     color: black;
 }
-
+h2 {
+    text-align: center;
+    margin: 20px;
+}
 
