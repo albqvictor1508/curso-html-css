@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>terceiro sobre fundos</title>
+    <style>
+        .bloco {
+            background-image: url('../imagens/wallpaper003.jpg');
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 15px;
+            margin: 10px;
+        }
+        #quadro1 {
+            background-position: right bottom;
+        }
+        #quadro2 {
+            background-position: left top;
+        }
+        #quadro3 {
+            background-position: left bottom;
+        }
+        #quadro4 {
+            background-position: center center;
+        }
+        #quadro5 {
+            background-image: url('../imagens/wallpaper004.jpg');
+            background-size: cover;
+            min-height: 400px;
+            max-height: 500px;
+        }
+        p {
+            margin: 20px 10px 10px 10px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="bloco" id="quadro1"></div>
+    <div class="bloco" id="quadro2"></div>
+    <div class="bloco" id="quadro3"></div>
+    <div class="bloco" id="quadro4"></div>
+    <div class="bloco" id="quadro5">
+        <p>As imagens tornam auto-explicativo quais são as positions na propriedade "background-position":</p>
+        <ul>
+            <li>right bottom</li>
+            <li>left top</li>
+            <li>left bottom</li>
+            <li>center center</li>
+        </ul>
+        <p>também temos as positions:</p>
+        <ul>
+            <li>left center</li>
+            <li>right center</li>
+        </ul>
+        <p>exemplo de position no "fundo04.html"</p>
+    </div>
+    
+    
+</body>
+</html>
