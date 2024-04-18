@@ -5,19 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>backgrounds</title>
     <style>
+        body {
+            background: url('../imagens/wallpaper001.jpg')
+        }
         .quadrado {
             border: 4px solid black;
             border-radius: 15px;
             width: 350px;
             height: 350px;
             display: inline-block;
+            margin: 10px 0px 0px 50px;
+        }
+        #q1 {
+            background-color: red;
+        }
+        #q2 {
+            background-image: linear-gradient(to bottom, rgb(136, 8, 221), black);
+        }
+        #q3 {
+            background-image: url('../imagens/pattern003.png');
+        }
+        #q4 {
+            background:url('../imagens/wallpaper002.jpg');
+            background-size: cover;
+        }
+        #q5 {
+            background-image: url('../imagens/wallpaper004.jpg');
+            background-size: cover;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            width: 600px;
+            height: 300px;
+            display: grid;
+            place-items: center;
+            margin: 70px auto;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="quadrado"></div>
-    <div class="quadrado"></div>
-    <div class="quadrado"></div>
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
+    <div class="quadrado" id="q4"></div>
+    <div class="quadrado" id="q5">
+        <p>várias divs com a mesma class e id diferentes para demonstrar os backgrounds usando as tags:</p>
+        <ul>
+            <li>background-image: url()</li>
+            <li>background-image: linear-gradient</li>
+            <li>background-color</li>
+        </ul>
+        <p>gradient e color ja foram muito utilizados durante o curso, agora é a hora de utilizar imagens nas divs</p>
+
+        <p>Usar o GIMP com moderação para redimensionar uma imagem para usar de background, pois sites pesados não são buscados pelo google</p>
+    </div>
     
 </body>
 </html>
