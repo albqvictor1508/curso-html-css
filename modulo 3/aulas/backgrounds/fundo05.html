@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundo 5</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        body {
+            height: 100vh;
+            background-size: 100% 100%;
+            background-color: black;
+            background-image: url('../imagens/wallpaper002.jpg');
+            background-attachment: fixed;
+            background: black url('../imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+        }
+        main {
+            max-width: 500px;
+            background-color: white;
+            background-image: url('../imagens/wallpaper004.jpg');
+            background-position: center center;
+            background-size: cover;
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+            border-radius: 0px 0px 10px 10px;
+            /*            
+            background-color: white;
+            background-image: url('../imagens/wallpaper004.jpg');
+            background-position: center center;
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+
+            background-size não funciona no shorthand
+
+            (sequencia)
+            */
+            background: black url('../imagens/wallpaper004.jpg') center center no-repeat cover fixed
+        }
+        ul {
+            list-style-position: inside;
+            list-style: \2705;
+
+        }
+        p {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p>
+          Configurando o "height:100vh" do body e o "background-size:100% 100%" o background se adapta ao tamanho da tela, porém distorce a imagem achatando ela
+        </p>
+        <p>
+            o "background-size:" vem por padrão "auto", mas temos outras opções que facilitam essa responsividade:
+        </p>
+        <ul>
+            <li>contain</li>
+            <li>cover</li>
+        </ul>
+        <p>o "contain" faz com que a imagem seja 100% exibida</p>
+
+        <p>o "cover" cobre a tela, mesmo que para isso corte partes da imagem para que adapte</p>
+
+        <p class="lorem">
+           O "background-attachment" é o vínculo do background, ou seja, se ele está vinculado ao conteúdo ou fixo na tela, em sites com muito conteúdo, o background acabaria não cobrindo todo o fundo do site, deixando o fundo da cor padrão, sem imagem, com o valor "fixed" o background fica preso na tela, ou seja, independendente do tamanho do conteúdo do site, o fundo será sempre o mesmo, sem acompanhar o conteúdo
+        </p>
+        <p>
+            O shorthand background engloba muitas tags de uma só vez:
+        </p>
+        <p>background-color -> background-image -> background-position -> background-repeat background-attachment</p>
+        <p class="lorem">
+            Percebe-se que o background-size não entrou na shorthand, pois mesmo que na documentação diga que ele funciona na shorthand, na prática ele não funciona.
+        </p>
+    </main>
+    
+</body>
+</html>
