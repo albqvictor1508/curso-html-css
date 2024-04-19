@@ -23,10 +23,6 @@
         }
         main {
             max-width: 500px;
-            background-color: white;
-            background-image: url('../imagens/wallpaper004.jpg');
-            background-position: center center;
-            background-size: cover;
             margin: auto;
             padding: 10px;
             text-align: center;
@@ -42,7 +38,12 @@
 
             (sequencia)
             */
-            background: black url('../imagens/wallpaper004.jpg') center center no-repeat cover fixed
+            background: black url('../imagens/wallpaper004.jpg') center center no-repeat fixed;
+            background-size: cover;
+
+        }
+        section {
+
         }
         ul {
             list-style-position: inside;
@@ -51,6 +52,21 @@
         }
         p {
             margin: 10px;
+        }
+        .container {
+            max-width: 600px;
+            background: black url('../imagens/target001.png') center center no-repeat fixed;
+            background-size: cover;
+            padding: 20px;
+            position: relative ; 
+        }
+        .conteudo {
+            position: absolute;
+            max-width: 300px;
+            background-color: yellow;
+            color: white;
+            border-radius: 10px;
+            top: ;
         }
     </style>
 </head>
@@ -79,8 +95,15 @@
         <p>background-color -> background-image -> background-position -> background-repeat background-attachment</p>
         <p class="lorem">
             Percebe-se que o background-size não entrou na shorthand, pois mesmo que na documentação diga que ele funciona na shorthand, na prática ele não funciona.
+
         </p>
     </main>
+    <div class="container">
+        <div class="conteudo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, enim nihil? Quis deserunt architecto quos quasi. Adipisci natus sit, nam quaerat dolorum inventore, impedit incidunt unde alias enim, ex consectetur?</p>
+
+        </div>
+    </div>
     
 </body>
 </html>
