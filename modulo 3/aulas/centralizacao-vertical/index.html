@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>centralização vertical</title>
+ </head>
+ <style>
+    body {
+        background-color: rgb(221, 150, 150);
+        position: relative;
+        height: 90vh;
+        width: 90vw;
+    }
+    .container {
+        display: block;
+        max-width: 800px;
+        max-height: 500px;
+        background-color: peru;
+        position: absolute;
+        margin: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .conteudo {
+        display: block;
+        max-width: 400px;
+        background-color: yellow;
+
+    }
+</style>
+ <body>
+    <section class="container">
+        <p>para centralizar horizontalmente o conteúdo, era utilizado o margin auto</p>
+        <p>para centralizar verticalmente e horizontalmente o conteúdo é feita com o position</p>
+        <p>o position: absolute tem que estar setado no elemento que vai ficar centralizado</p>
+        <p>o position: relative fica no local aonde o elemento vai ser centralizado</p>
+        <p>o comando "top" mexe a caixa verticalmente, o comando "left" mexe a caixa horizontalmente</p>
+        <p>o position considera o vértice superior esquerdo do elemento, não seu centro, para que centralize corretamente, utliza-se o comando "transform: translate(-50%, -50%)</p>
+        <p>valor positivo movimentará a caixa para direita e para baixo, ja o valor negativo movimentará a caixa para esquerda e para cima</p>
+
+    </section>
+    
+ </body>
+ </html>
