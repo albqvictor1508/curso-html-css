@@ -22,21 +22,45 @@ header p {
 }
 main p {
     font-family: 'Sriracha';
-    font-size: 47px;
+    font-size: 50px;
     margin: 20px 40px -20px  ;
 }
 .primeiro {
-    margin-top: 80px;
+    margin-top: 5px;
 }
 .ultimo {
     margin-bottom: 120px;
 }
 div {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.568);
     color: white;
+    width: 700px;
+    height: 660px;
+    padding: 5px;
+}
+#img1 {
+    background-image: url('background001.jpg');
+}
+#img2 {
+    background-image: url('background002.jpg');
 }
 .imagem {
-    max-height: 600px;
-    background: color black url('background001.jpg') right center no-repeat fixed;
+    background: black right center no-repeat fixed;
     background-size: cover;
+
+}
+section {
+    padding: 10vh 50px 
+}
+.espacamento {
+    padding-top:80px;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    margin-top: 100px;
 }
