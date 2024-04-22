@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformar letras em CSS</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            
+        }
+        header {
+            background-color: black;
+            text-align: center;
+            color: white;
+            padding: 30px;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(175, 182, 180);
+        }
+        main {
+            max-width: 450px;
+            padding-bottom: 10px;
+            border: 3px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            background-color: white;
+        }
+        p {
+            padding: 15px;
+            font-size: 1.4em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Transformar letras em CSS</h1>
+    </header>
+    <main>
+        <p>os comandos <strong>"text-transform: uppercase;"</strong> transforma todo o texto em letras maiúsculas</p>
+
+        <p>e o comando <strong>"font-variant: small-caps"</strong> torna as outras letras menores que a primeiras, para dar contraste a primeira letra mesmo em um texto em letras maiusculas</p>
+        
+        <p>utilizar o <strong>padding</strong> para espaçamento interno entre elementos, por exemplo parágrafos, em vez de utilizar o <strong>margin</strong>, pois utilizando o <strong>padding</strong> a movimentação é bem mais facilitada</p>
+
+    </main>
+    
+</body>
+</html>
