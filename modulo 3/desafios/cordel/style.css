@@ -13,16 +13,17 @@ header {
 }
 header h1 {
     font-family: 'Passion One';
-    font-size: 67px;
+    font-size: 7vw;
+
 }
 header p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    font-size: 16px;
+
 }
 main p {
     font-family: 'Sriracha';
-    font-size: 50px;
+    font-size: 5vw;
     margin: 20px 40px -20px  ;
 }
 .primeiro {
@@ -31,29 +32,31 @@ main p {
 .ultimo {
     margin-bottom: 120px;
 }
-div {
+.imagem > p {
     background-color: rgba(0, 0, 0, 0.568);
     color: white;
-    width: 700px;
-    height: 660px;
-    padding: 5px;
+    font-size: 3.8vw;
+    width: 48vw;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 #img1 {
-    background-image: url('background001.jpg');
+    background-image: url('imagens/background001.jpg');
 }
 #img2 {
-    background-image: url('background002.jpg');
+    background-image: url('imagens/background002.jpg');
 }
 .imagem {
     background: black right center no-repeat fixed;
     background-size: cover;
+    padding: 10vh 0px;
 
 }
 section {
     padding: 10vh 50px 
 }
 .espacamento {
-    padding-top:80px;
+    padding-top: 120px;
 }
 footer {
     background-color: black;
