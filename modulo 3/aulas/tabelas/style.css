@@ -2,7 +2,43 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-body {
-    margin: 12px;
+p {
+    padding: 10px;
+}
+.pequena td {
+    border: 1px solid black;
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+
+}
+.pequena {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.grande td, th {
+    border: 1px solid black;
+    width: 300px;
+    padding: 5px;
+
+}
+.grande th {
+    color: white;
+    background-color: lightgray;
+    padding: 10px;
+}
+.numero {
+    text-align: right;
+}
+.grande {
+    border-collapse: collapse;
+    margin: 25px 0px 10px 10px ;
+}
+.total {
+    text-align: center;
+    background-color: lightgray;
+    color: white;
+    font-weight: bold;
 }

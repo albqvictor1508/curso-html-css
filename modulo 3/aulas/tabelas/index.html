@@ -9,40 +9,205 @@
 <body>
     <main>
         <h1>Hierarquia de tabelas (simples)</h1>
-<p>table: abre a tabela</p>
+        <p>table: abre a tabela</p>
 
-<p>tr: linha da tabela</p>
+        <p>tr: linha da tabela</p>
 
-<p>table header: cabecalho da tabela</p>
+        <p>table header: cabecalho da tabela</p>
 
-<p>td: dado da tabela</p>
+        <p>td: dado da tabela</p>
 
-<h2>Formatação de tabela</h2>
-<p>border-collapse: junta as bordas, para que nao fique aquele vao entre uma borda e outra.</p>
+        <h2>Formatação de tabela</h2>
+        <p>border-collapse: junta as bordas, para que nao fique aquele vao entre uma borda e outra.</p>
 
-<h2>Alinhamento de tabela</h2>
-<p>text-align: centraliza o texto horizontalmente</p>
+        <h2>Alinhamento de tabela</h2>
+        <p>text-align: centraliza o texto horizontalmente</p>
 
-<p>vertical-align: centraliza o texto verticalmente</p>
+        <p>vertical-align: centraliza o texto verticalmente</p>
 
-<p>como usar o vertical-align:</p>
+        <p>como usar o vertical-align:</p>
 
-<ul>
-    <li>top</li>
-    <li> middle</li>
-    <li>bottom</li>
-</ul>
-<h2>Anatomia da tabela</h2>
-<p>
-    <pre>
-                    TABLE
-                          thead (tr, td, th)
-                          tbody (tr, td, th)      
-                          tfoot (tr,td,th)
-                            </pre>
-                            </p>
-                
-<p>cada um com seu tr,td e th</p>
+        <ul>
+            <li>top</li>
+            <li> middle</li>
+            <li>bottom</li>
+        </ul>
+        <h2>Anatomia da tabela</h2>
+        <p>
+            <pre>
+                            TABLE
+                                thead (tr, td, th)
+                                tbody (tr, td, th)      
+                                tfoot (tr,td,th)
+                                    </pre>
+                                    </p>
+                        
+        <p>cada um com seu tr,td e th</p>
+
+        <h2>Agora criaremos uma tabela</h2>
+
+        <table class="pequena">
+            <tr>
+                <td colspan="3" class="cabecalho">Tabela pequena</td>
+            </tr>
+            <tr>
+                <td>A1</td>
+                <td>B1</td>
+                <td>C1</td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+            </tr>
+        </table>
+        <p>temos aqui uma pequena tabela</p>
+
+        <p>agora iremos para uma grande tabela</p>
+
+        <table class="grande">
+            <thead>
+                <tr>
+                    <th>Jogos</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PlayerUnknown’s Battlegrounds</td>
+                    <td class="numero">+100 milhões ativos</td>
+                </tr>
+                <tr>
+                    <td>Minecraft</td>
+                    <td class="numero">+95 milhões ativos</td>
+                </tr>
+                <tr>
+                    <td>Apex Legends</td>
+                    <td class="numero">50 milhões ativos</td>
+                </tr>
+                <tr>
+                    <td>Fortnite</td>
+                    <td class="numero">45 milhões ativos</td>
+                </tr>
+                <tr>
+                    <td>CS:GO</td>
+                    <td class="numero">35 milhões ativos</td>
+                </tr>
+                <tr>
+                    <td>Hearthstone: Heroes of Warcraft</td>
+                    <td class="numero">30 milhões ativos</td>
+                </tr>
+                <tr>
+                    <td>League of Legends</td>
+                    <td class="numero">27 milhões ativos</td>
+                </tr>
+                <tr>
+                    <td>Call of Duty Mobile</td>
+                    <td class="numero">15 milhões ativos</td>
+                </tr>
+                <tr>
+                    <td>Among Us</td>
+                    <td class="numero">8 milhões ativos</td>
+                </tr>
+                <tr>
+                    <td>Dota 2</td>
+                    <td class="numero">5 milhões ativos</td>
+                </tr>
+                <tr>
+                    <td>Free Fire</td>
+                    <td class="numero"> +300 milhões mensais</td>
+                </tr>
+                <tr>
+                    <td>Roblox</td>
+                    <td class="numero">+200 milhões mensais</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <th>Mais Jogados</th>
+                <td class="total">000000</td>
+            </tfoot>
+        </table>
+        <h2>Escopo de TH's</h2>
+        <p>
+            <pre>
+                            TABLE
+                            caption
+                                thead (tr, td, th)
+                                tbody (tr, td, th)      
+                                tfoot (tr,td,th)
+                                    </pre>
+                                    </p>
+        <p> o caption funciona como um título</p>                            
+        <table class="grande">
+            <caption>Jogos mais jogados no mundo</caption>
+            <thead>
+                <tr>
+                    <th>Jogos</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PlayerUnknown’s Battlegrounds</td>
+                    <td class="numero">+100 milhões ativos</td>
+                </tr>
+                <tr>
+                    <td>Minecraft</td>
+                    <td class="numero">+95 milhões ativos</td>
+                </tr>
+                <tr>
+                    <td>Apex Legends</td>
+                    <td class="numero">50 milhões ativos</td>
+                </tr>
+                <tr>
+                    <td>Fortnite</td>
+                    <td class="numero">45 milhões ativos</td>
+                </tr>
+                <tr>
+                    <td>CS:GO</td>
+                    <td class="numero">35 milhões ativos</td>
+                </tr>
+                <tr>
+                    <td>Hearthstone: Heroes of Warcraft</td>
+                    <td class="numero">30 milhões ativos</td>
+                </tr>
+                <tr>
+                    <td>League of Legends</td>
+                    <td class="numero">27 milhões ativos</td>
+                </tr>
+                <tr>
+                    <td>Call of Duty Mobile</td>
+                    <td class="numero">15 milhões ativos</td>
+                </tr>
+                <tr>
+                    <td>Among Us</td>
+                    <td class="numero">8 milhões ativos</td>
+                </tr>
+                <tr>
+                    <td>Dota 2</td>
+                    <td class="numero">5 milhões ativos</td>
+                </tr>
+                <tr>
+                    <td>Free Fire</td>
+                    <td class="numero"> +300 milhões mensais</td>
+                </tr>
+                <tr>
+                    <td>Roblox</td>
+                    <td class="numero">+200 milhões mensais</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <th>Mais Jogados</th>
+                <td class="total">000000</td>
+            </tfoot>
+        </table>                            
     </main>
 </body>
 </html>
