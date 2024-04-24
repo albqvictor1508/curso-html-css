@@ -68,7 +68,7 @@
         </table>
         <p>temos aqui uma pequena tabela</p>
 
-        <p>agora iremos para uma grande tabela</p>
+        <h2>agora iremos para uma grande tabela</h2>
 
         <table class="grande">
             <thead>
@@ -133,7 +133,7 @@
                 <td class="total">000000</td>
             </tfoot>
         </table>
-        <h2>Escopo de TH's</h2>
+        <h2>Anatomia de tabelas</h2>
         <p>
             <pre>
                             TABLE
@@ -143,7 +143,9 @@
                                 tfoot (tr,td,th)
                                     </pre>
                                     </p>
-        <p> o caption funciona como um título</p>                            
+        <p> o caption é a legenda de uma tabela (explicar doq se trata esses dados)</p>
+        <h2>Anatomia da tabela</h2>
+                         
         <table class="grande">
             <caption>Jogos mais jogados no mundo</caption>
             <thead>
@@ -207,7 +209,115 @@
                 <th>Mais Jogados</th>
                 <td class="total">000000</td>
             </tfoot>
-        </table>                            
+        </table> 
+        <p>tambem pode ser usado a propriedade scope apos  a tag de titulo, para especificar se o titulo e de uma coluna ou de uma linha por exemplo </p>
+        
+        <h2>Efeito Zebrado</h2>
+
+        <p>possivel colocar o efeito zebrado para que a tabela fique mais simples de ser lida com a pseudo-classe :nth-child('valor'n ) </p>
+
+        <p>vai intercalar de acordo com o valor especificado entre parenteses</p>
+        <p>o valor tambem pode ser especificado como par e impar </p>
+
+        <p>odd:impar</p>
+        <p>even:par</p>
+
+        <h2>Cabecalho fixo em tabela grande</h2>
+
+        <p>usa-se a position: relative na tabela e a position:sticky(colar) no th que esta no tr do thead</p>
+        <p>Dessa maneira:</p>
+        <p>
+            <pre>
+            thead > tr > th {
+                position: sticky;
+                top: -1px;
+            }
+            </pre>
+        </p>
+        <p>top -1px para encaixar no topo sem sobrar espaco  </p>
+        <p>Dessa maneira somente a celula vai acompanhar a rolagem, mas nao seu background, entao:</p>
+        <p>
+            <pre>
+            thead > tr > th {
+                position: sticky;
+                top: -1px;
+                background-color: valor;
+
+            }
+            </pre>
+        </p>
+        <p>para que a celula tenha background quando acompanhar a rolagem</p>
+
+        <h2>Mesclagem de Celulas</h2>
+
+        <p>(rowspan e colspan)</p>
+
+        <table>
+            <tr>
+                <td colspan="3">A </td>
+
+            </tr>
+            <tr>
+                <td rowspan="2">D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+
+
+                <td colspan="2">I</td>
+            </tr>
+        </table>
+        <p>rowspan: preenchimento de linha</p>
+        <p>colspan: preenchimento de coluna</p>
+
+        <table class="idades">
+            <thead>
+                <tr>
+                <th colspan="2">Nomes</th>
+                <th>Idades</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th rowspan="3" colspan="1"> Homens</td>
+                </tr>
+                <tr>
+                    <th rowspan="3">Mulheres</th>
+                </tr>
+                <tr>
+                    <td>Victor</td>
+                    <td>17</td>
+
+                </tr>
+                <tr>
+                    <td>Vinicius</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>Dario</td>
+                    <td>41</td>
+                </tr>
+                <tr>
+                    <td>Alexsa</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Nathalia</td>
+                    <td>39</td> 
+                </tr>
+                
+
+            </tbody>
+            <tfoot>
+                <th>Idades das pessoas que vivem comigo</th>
+            </tfoot>
+        </table>
+
     </main>
 </body>
 </html>
