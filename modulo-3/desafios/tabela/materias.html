@@ -21,6 +21,10 @@
             background-color: lightgray;
             color: white;
         }
+        .exatas-humanas {
+            background-color: white;
+            color: black;
+        }
         
     </style>
 <body>
@@ -28,15 +32,19 @@
         <table>
             <thead>
             <tr>
-                <th>Área</th>
-                <th colspan="1">Disciplinas</th>
-                <th colspan="1">Notas</th>
-                <th>Média</th>
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplinas</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
             </tr>
 
         <tbody>
             <tr>
-                <th rowspan="5">Exatas</th>
+                <th rowspan="5" class="exatas-humanas">Exatas</th>
                 <td colspan="1">Matemática</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -66,7 +74,7 @@
         <td class="numero">0.0</td>
         </tr>
         <tr>
-            <th rowspan="2">Humanas</th>
+            <th rowspan="2" class="exatas-humanas">Humanas</th>
             <td colspan="1">História</td>
             <td>0.0</td>
             <td>0.0</td>
@@ -87,6 +95,8 @@
     </tfoot>
         </table>
     </main>
+
+    <p>Esse foi dificin, aprender a usar com maestria o rowspan e o colspan para manipular a formatação de uma tabela.</p>
     
 </body>
 </html>
