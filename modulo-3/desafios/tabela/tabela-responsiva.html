@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tabela-responsiva.css">
+    <title>Tabela Responsiva</title>
+    <style>
+        div {
+            overflow-x:  auto;
+
+
+        }
+        div table {
+            border-collapse: collapse;
+            
+        }
+        div td, th {
+            border: 2px solid;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Criaçao de tabela responsiva</h1>
+    
+    <p>fiz um css externo para usar a responsividade nas outras tabelas</p>
+
+    <div>
+        <table>
+            <colgroup>
+                <col class="nome" span="2">
+                <col class="idade" span="2">
+                <col class="genero">
+                <col class="profissao">
+                <!-- genero e profissao não estão sendo usado pois o nome e a idade estão com "span=2"-->
+            </colgroup>
+            <thead>
+                <caption>Tabelinha</caption>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Gênero</th>
+                <th>Profissão</th>
+                <th>xxxxx</th>
+                <th>xxxxxxxx</th>
+                <th>xxxxx</th>
+                <th>xxxxxxxx</th>
+                <th>xxxxx</th>
+                <th>xxxxx</th>
+                <th>xxxxxx</th>
+                <th>xxxxx</th>
+                <th>xxxxxx</th>
+                <th>xxxxxxxx</th>
+            </thead>
+            <tbody>
+                <tr>
+                <td>Alexsa</td>
+                <td>16</td>
+                <td>F</td>
+                <td>Estudante mais linda do mundo</td>
+                </tr>
+                <tr>
+                    <td>Victor</td>
+                    <td>17</td>
+                    <td>M</td>
+                    <td>Estudante</td>
+                </tr>
+                <tr>
+                    <td>Joseana</td>
+                    <td>52</td>
+                    <td>F</td>
+                    <td>Costureira profissional</td>
+                </tr>
+                <tr>
+                    <td>Dario</td>
+                    <td>42</td>
+                    <td>M</td>
+                    <td>Dono de empresa renomada</td>
+                </tr>
+                <tr>
+                    <td>Vinicius</td>
+                    <td>13</td>
+                    <td>V</td>
+                    <td>Vagabundo safado</td>
+                </tr>
+                <tr>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <p>overflow-x: cria uma barra de rolagem na horizontal da tabela</p>
+
+    <p>overflow-y: cria uma barra de rolagem na vertical da tabela</p>
+
+    <p>também pode usar "overflow:auto" como shorthand para esses dois comandos</p>
+</body>
+</html>
