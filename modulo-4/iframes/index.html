@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe {
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Iframes</h1>
+        <p>Iframes: quadros em linha</p>
+        <p>(quadros com display inline)</p>
+        <iframe src="https://albqvictor1508.github.io/site-roblox/" frameborder="0" width="550px" height="250px">
+            <a href="https://albqvictor1508.github.io/site-roblox/">site do Roblox</a>
+        </iframe>
+        <p>Diversos sites não permitem iframes pois pode ser utilizado para extrair dados de outras pessoas</p>
+
+        <h2>Configurando iframes</h2>
+
+        <p>é possivel usar width e height nos iframes</p>
+        <p>O css é soberano ao que é formatado na tag iframe</p>
+
+        <p>Por exemplo, se eu colocar 600px de width na tag iframe e colocar 450px no seletor iframe no CSS, o CSS tem prioridade</p>
+
+            <p>(scolling depende do seu navegador)</p>
+
+        <p>scolling="auto" : se o conteúdo exceder o tamanho do iframe, a barra de rolagem aparece</p>
+
+        <p>scolling="yes" : mesmo que o conteúdo não exceda o tamanho do iframe, a barra de rolagem aparecerá</p>
+
+        <p>scolling="no" : mesmo que o conteúdo exceda o tamanho do iframe, não aparecerá a barra de rolagem</p>
+
+        <p>frameborder é a borda do iframe, que também pode ser feita com o border do CSS</p>
+        <h2>Conteúdo local</h2>
+        <iframe src="pagina01.html" frameborder="0" width="600px" height="300px"></iframe>
+
+    </main>
+</body>
+</html>
